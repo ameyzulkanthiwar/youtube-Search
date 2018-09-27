@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Youtube Search</title>
+    <meta name="description" content="Youtube search result">
+    <meta name="author" content="Pilot">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="hero is-primary is-bold is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-half">
+                        <h1 class="title has-text-centered">
+                            Youtube Search
+                        </h1>
+                        <div class="field has-addons">
+                            <p class="control has-icons-left w-100">
+                                <input class="input is-rounded" type="text" placeholder="Search for YouTube videos" id="search-bar">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                </span>
+                            </p>
+                            <p class="control">
+                                <a disabled class="button" id="order-by-views">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                    <span class="is-size-7">Most Views</span>
+                                </a>
+                            </p>
+                            <p class="control">
+                                <a disabled class="button" id="order-by-ratings">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="is-size-7">Most Ratings</span>
+                                </a>
+                            </p>
+                        </div>
+                        <div id="suggestions"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.compiled.js"></script>
+</body>
+
+</html>
